@@ -1,0 +1,17 @@
+  <div class="vz-main-content">
+
+      <a ng-show="isfilteropen" ng-click="toggleFilter()" class="vz-close">
+      <i class="glyphicon glyphicon-remove"></i>
+      </a>
+        <div ng-class="{'vz-tab-filter-is-visible':isfilteropen,'vz-tab-filter':!isfilteropen}">
+
+                <img class="vz-icon" ng-src={{iconfile}}>
+            <div class='vz-title-area'>
+        <p class='vz-title'><h3>{{title}}</h3></p>
+
+      </div>
+
+        </div>
+            <div ng-transclude></div>
+                 <a class="vz-filter-trigger" ng-click="toggleFilter()">Filters</a>
+  </div>

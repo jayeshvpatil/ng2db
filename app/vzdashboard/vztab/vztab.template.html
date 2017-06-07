@@ -1,0 +1,43 @@
+     <section  ng-class="{'vz-main-area-filter-is-visible':isfilteropen,'vz-main-area':!isfilteropen}">
+
+       <!-- Nav tabs -->
+       <ul class=" nav nav-tabs" role="tablist">
+         <li id="channel-tab" role="presentation" ng-click="selectedtab(tab)" ng-class="{'active':tab.active}" ng-repeat="tab in tabs">
+           <a  aria-controls="tab.tabname" role="tab" data-toggle="tab">
+             {{tab.tabname}}
+           </a>
+         </li>
+
+       </ul>
+
+       <!-- Tabs -->
+       <div class="clearfix section-divider-bottom">
+         <div class="tab-content">
+          <div ng-repeat="tab in tabs" role="tabpanel" class="tab-pane" ng-class="{'active':tab.active}"   
+          id="tab.tabcontent_id" 
+          aria-labelledby="tab.tabname" >
+          <div class="container-fluid">
+            <div class="row" >
+              <div class="col-sm-{{w.size}}" ng-repeat="w in tab.tabcontent track by $index">
+                <div class="chart-wrapper">
+                  <div class="chart-title">
+                  {{w.title}}
+                  </div>
+                  <div class="chart-stage">
+                    <div id="grid-1-1">
+                   <nvd3 options="w.options" data="w.data"></nvd3>
+                   </div>
+                 </div>
+                 <div class="chart-notes">
+                  Notes about this chart
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+    </div> 
+  </div>
+
+</section>

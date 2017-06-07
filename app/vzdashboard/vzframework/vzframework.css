@@ -1,0 +1,150 @@
+
+* --------------------------------
+
+Main Components
+
+-------------------------------- */
+
+
+
+
+.vz-main-content {
+  position: relative;
+  min-height: 100vh;
+}
+
+.vz-tab-filter {
+  background-color: #ffffff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+  z-index: 1;
+  display: table;
+  clear: both;
+  position: relative;
+  height: 40px;
+  width: 100%;
+  margin: 0 auto;
+
+}
+.vz-tab-filter-is-visible{
+  background-color: #ffffff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+  z-index: 1;
+  display: table;
+  clear: both;
+  position: relative;
+  height: 40px;
+   float: right;
+  margin: 0 auto;
+    width: 100%;
+}
+
+
+.vz-filter-trigger {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  height: 40px;
+  line-height: 40px;
+  width: 60px;
+  /* image replacement */
+  overflow: hidden;
+  text-indent: 100%;
+  color: transparent;
+  white-space: nowrap;
+  background: transparent url("/img/cd-icon-filter.svg") no-repeat center center;
+  z-index: 3;
+}
+
+@media only screen and (min-width: 580px) {
+  .vz-filter-trigger {
+    width: auto;
+    left: 2%;
+    text-indent: 0;
+    color: #9a9a9a;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding-left: 24px;
+    background-position: left center;
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    transition: color 0.3s;
+  }
+
+}
+
+
+.vz-close{
+    position: absolute;
+  top: 40px;
+  left: 250px;
+  height: 40px;
+  line-height: 40px;
+  width: 30px;
+  color: #ffffff;
+  font-size: 1.3rem;
+  text-align: center;
+  background: #900000;
+  -webkit-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  z-index: 3;
+}
+
+.vz-title-area{
+    position: relative;
+    display:inline-block;
+    text-align: center;
+        margin-left:300px;
+
+       font-size: 0;
+    height: 35px;
+
+}
+
+.vz-title{
+
+  display: inline-block;
+    position:relative;
+
+}
+
+
+
+.vz-icon{
+display: inline-block;
+
+    position:relative;
+  margin-top:0px;
+    margin-left:10px;
+
+}
+
+    .chart-wrapper {
+  background: #fff;
+  border: 1px solid #e2e2e2;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+.chart-wrapper .chart-title {
+  border-bottom: 1px solid #d7d7d7;
+  color: #666;
+  font-size: 14px;
+  font-weight: 200;
+  padding: 7px 10px 4px;
+}
+
+.chart-wrapper .chart-stage {
+  overflow: hidden;
+  padding: 5px 10px;
+  position: relative;
+}
+
+.chart-wrapper .chart-notes {
+  background: #fbfbfb;
+  border-top: 1px solid #e2e2e2;
+  color: #808080;
+  font-size: 12px;
+  padding: 8px 10px 5px;
+}
+

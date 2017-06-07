@@ -1,0 +1,36 @@
+
+.vz-tabs{
+
+align-content: left;
+    margin-left: 300px;
+  color: transparent;
+
+}
+
+.vz-main-area{
+
+    top:10px;
+  padding: 26px 5%;
+  width: 100%;
+}
+
+
+ .vz-main-area-filter-is-visible {
+
+       padding: 26px 5%;
+   float:right;
+     width: 80%;
+  }
+
+
+ul.vz-tabs.nav.nav-tabs{
+padding-bottom: 0;
+margin-bottom: 0;
+height: 30px;
+
+
+}
+
+.nav-tabs>li.active>a {
+    background: transparent;
+}

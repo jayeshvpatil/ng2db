@@ -1,0 +1,55 @@
+
+.vz-filter {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 280px;
+  height: 100%;
+  background: #ffffff;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  -webkit-transition:width  1s;
+  transition: width 1s;
+
+}
+.vz-filter form {
+  padding: 70px 20px;
+}
+.vz-filter-close {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0px;
+  height: 0%;
+  z-index: 2;
+
+}
+
+
+.vz-filter-is-visible {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2);
+     opacity: 1;
+}
+
+
+
+
+.vz-filter-block{
+  position: relative;
+  margin-bottom: .2em;
+  padding: 10px 0 10px 20px;
+  color: #9a9a9a;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.3rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}

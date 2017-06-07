@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html lang="en-US" ng-app="jpDashboard">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Demo</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bower_components/animate.css/animate.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles.css">
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-component-router/angular_1_router.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+
+    <!-- vzframework -->
+    <script src="/Dashboard/vzDashboard/vzFramework/vzframework.module.js"></script>
+      <script src="/Dashboard/vzDashboard/vzFramework/vzframework.controller.js"></script>
+      <script src="/Dashboard/vzDashboard/vzFramework/vzframework.directive.js"></script>
+
+    <script src="Dashboard/app.js"></script>
+
+</head>
+
+<body ng-cloak ng-controller="mainController">
+    <div class="vz-main-content">
+        <div ng-class="{'vz-tab-filter-is-visible':ismenuopen,'vz-tab-filter':!ismenuopen}">
+            <ul class="vz-tabs">
+
+                <li class="tab"><a class="selected" href="#0" data-type="all">Recap</a></li>
+                <li class="tab" data-filter=".color-1"><a href="#0" data-type="color-1">Trend</a></li>
+                <li class="tab" data-filter=".color-2"><a href="#0" data-type="color-2">Postpaid</a></li>
+            </ul>
+            <!-- cd-filters -->
+
+        </div>
+        <section class="vz-main-area" ng-class="{'vz-main-area-filter-is-visible':ismenuopen,'vz-main-area':!ismenuopen}">
+            <h2>Helllollllllpopppppppiiiiiiiiiiiiii</h2>
+        </section>
+        <div ng-class="{'vz-filter':ismenuopen,'vz-filter-close':!ismenuopen}">
+            <form>
+                <div class="vz-filter-block" ng-hide="!ismenuopen">
+                    <h4>Check boxes</h4>
+
+                    <ul class="vz-filter-content list">
+                        <li>
+                            <input class="filter" data-filter=".check1" type="checkbox" id="checkbox1">
+                            <label class="checkbox-label" for="checkbox1">Option 1</label>
+                        </li>
+
+                        <li>
+                            <input class="filter" data-filter=".check2" type="checkbox" id="checkbox2">
+                            <label class="checkbox-label" for="checkbox2">Option 2</label>
+                        </li>
+
+                        <li>
+                            <input class="filter" data-filter=".check3" type="checkbox" id="checkbox3">
+                            <label class="checkbox-label" for="checkbox3">Option 3</label>
+                        </li>
+                    </ul>
+                    <!-- cd-filter-content -->
+                </div>
+                <!-- cd-filter-block -->
+
+                <div class="vz-filter-block" ng-hide="!ismenuopen">
+                    <h4>Select</h4>
+
+                    <div class="vz-filter-content">
+                        <div class="vz-select ">
+                            <select class="filter" name="selectThis" id="selectThis">
+                                <option value="">Choose an option</option>
+                                <option value=".option1">Option 1</option>
+                                <option value=".option2">Option 2</option>
+                                <option value=".option3">Option 3</option>
+                                <option value=".option4">Option 4</option>
+                            </select>
+                        </div>
+                        <!-- cd-select -->
+                    </div>
+                    <!-- cd-filter-content -->
+                </div>
+                <!-- cd-filter-block -->
+            </form>
+        <a ng-click="toggleMenu()" class="vz-close">Close</a>
+        </div>
+
+
+                 <a class="vz-filter-trigger" ng-click="toggleMenu()">Filters</a>
+
+    </div>
+
+</body>
+
+</html>
